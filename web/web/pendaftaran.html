@@ -33,7 +33,7 @@
                 </figure>
                 <p>
                   <div class="h1">PMB - Universitas AMIKOM Yogyakarta</div>
-                  <div class="lead">
+                  <div class="lead" style="border-bottom: 3px solid orange; padding-bottom: 5px">
                     Penerimaan Mahasiswa Baru 2019/2020
                   </div>
                 </p>  
@@ -45,24 +45,24 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-6">
-                  <h3>Biodata</h2> 
+                  <h3 class="judul" style="border-bottom: 1px solid gray; margin-bottom: 30px">Biodata</h2> 
                   <form>
                     Nama<br>
-                    <input type="text" name="Nama Lengkap"><br>
+                    <input class="form-control" type="text" placeholder="Nama Lengkap" name="Nama Lengkap"><br>
                     Nomor Identitas (KTP)<br>
-                    <input type="text" name="Nomor Identitas"><br>
+                    <input class="form-control" type="text" placeholder="Nomor Identitas" name="Nomor Identitas"><br>
                     Kota Kelahiran<br>
-                    <input type="text" name="Kota Kelahiran"><br>
+                    <input class="form-control" type="text" placeholder="Kota Kelahiran" name="Kota Kelahiran"><br>
                     Tanggal Lahir<br>
-                    <input type="date" name="Tanggal Lahir"><br>
+                    <input class="form-control" type="date" placeholder="Tanggal Lahir" name="Tanggal Lahir"><br>
                     Jenis Kelamin<br>
-                    <select name="Jenis Kelamin">
+                    <select class="form-control" name="Jenis Kelamin">
                       <option>---Jenis Kelamin---</option>
                       <option>Laki - laki</option>
                       <option>Perempuan</option>
                     </select><br>
                     Agama<br>
-                    <select name="Agama">
+                    <select class="form-control" name="Agama">
                       <option>---Agama---</option>
                       <option>Islam</option>
                       <option>Kristen</option>
@@ -73,25 +73,28 @@
                       <option>Lainnya</option>
                     </select><br>
                     Kewarganegaraan<br>
-                    <select name="Kewarganegaraan">
+                    <select class="form-control" name="Kewarganegaraan" style="width: 24%; display: inline-block">
                       <option>WNI</option>
                       <option>WNA</option>
                     </select>
-                    <input type="text" name="Negara" value="INDONESIA"><br>
+                    <input class="form-control" type="text" name="Negara" value="INDONESIA" style="width: 74%; display: inline-block"><br>
                     Alamat<br>
-                    <textarea name="alamat" rows="3" cols="30"></textarea><br>
+                    <textarea class="form-control" name="alamat" rows="3" cols="30"></textarea><br>
                     RT / RW <br>
-                    <input type="text" name="RT"> / <input type="text" name="RW"><br>
+                    <input class="form-control" placeholder="RT" type="text" name="RT" style="width: 13%; display: inline-block"> 
+                    / 
+                    <input class="form-control" placeholder="RW" type="text" name="RW" style="width: 13%; display: inline-block; margin-bottom: 25px"><br>
                     Kelurahan<br>
-                    <input type="text" name="Kelurahan"><br>
+                    <input class="form-control" type="text" placeholder="Kelurahan" name="Kelurahan"><br>
                     Kecamatan<br>
-                    <input type="text" name="Kecamatan"><br>
+                    <input class="form-control" type="text" placeholder="Kecamatan" name="Kecamatan"><br>
                     Provinsi<br>
-                    <select name="Provinsi">
+                    <select class="form-control" placeholder="Provinsi" name="Provinsi">
+                      <option>---Pilih Provinsi---</option>
                       <option>Daerah Istimewa Yogyakarta</option>
                     </select><br>
                     Kabupaten<br>
-                    <select name="Kabupaten">
+                    <select class="form-control" name="Kabupaten">
                       <option>---Pilih Kabupaten---</option>
                       <option>Kulon Progo</option>
                       <option>Bantul</option>
@@ -100,29 +103,76 @@
                       <option>Kota Yogyakarta</option>
                     </select><br>
                     Kodepos<br>
-                    <input type="text" name="kodepos"><br>
+                    <input class="form-control" type="text" placeholder="Kode Pos" name="kodepos" style="width: 20%"><br>
                   </form>
                 </div>
                 <div class="col-lg-6">
-                  <h3>Data Orang Tua</h3>
+                  <h3 class="judul" style="border-bottom: 1px solid gray; margin-bottom: 30px">Data Orang Tua</h3>
                   <form>
                     Nama Ibu <i>(sebelum menikah)</i><br>
-                    <input type="text" name="Nama Ibu"><br>
+                    <input class="form-control" type="text" placeholder="Nama Ibu" name="Nama Ibu"><br>
                   </form>
-                  <h3>Pendidikan</h3>
+                  <h3 class="judul" style="border-bottom: 1px solid gray; margin: 30px 0px 30px 0px">Pendidikan</h3>
                   <form>
                     Jenjang Pendidikan<br>
-                    <select name="Jenjang Pendidikan">
+                    <select class="form-control" name="Jenjang Pendidikan">
+                      <option>---Pilih Jenjang Pendidikan---</option>
                       <option>SMA - IPA</option>
                       <option>SMA - IPS</option>
                       <option>SMK - IPA</option>
                       <option>SMK - IPS</option>
                     </select><br>
                     Sekolah Asal<br>
-                    <input type="text" name="Sekolah Asal"><br>
+                    <input class="form-control" type="text" placeholder="Sekolah Asal" name="Sekolah Asal"><br>
                     Rata - rata NEM<br>
-                    <input type="text"> , <input type="text"><br>
+                    <input class="form-control" type="text" placeholder="0" style="width: 10%; display: inline-block"> 
+                    , 
+                    <input class="form-control" placeholder="00" type="text" style="width: 12%; display: inline-block"><br>
+                    <h3 class="judul" style="border-bottom: 1px solid gray; margin: 30px 0px 30px 0px">Pilihan Jurusan di AMIKOM</h3>
+                    Pilihan 1<br>
+                    <select class="form-control" name="Pilihan 1">
+                      <option>Informatika</option>
+                      <option>---Pilih Jurusan---</option>
+                      <option>Manajemen Informatika</option>
+                      <option>Teknik Informatika</option>
+                      <option>Sistem Informasi</option>
+                    </select><br>
+                    Pilihan 2<br>
+                    <select class="form-control" name="Pilihan 2">
+                      <option>---Pilih Jurusan---</option>
+                      <option>Informatika</option>
+                      <option>Manajemen Informatika</option>
+                      <option>Teknik Informatika</option>
+                      <option>Sistem Informasi</option>
+                    </select><br>
+                    Pilihan 3<br>
+                    <select class="form-control" name="Pilihan 3">
+                      <option>---Pilih Jurusan---</option>
+                      <option>Informatika</option>
+                      <option>Manajemen Informatika</option>
+                      <option>Teknik Informatika</option>
+                      <option>Sistem Informasi</option>
+                    </select><br>
+                    Pilihan 4<br>
+                    <select class="form-control" name="Pilihan 4">
+                      <option>Informatika</option>
+                      <option>Manajemen Informatika</option>
+                      <option>Teknik Informatika</option>
+                      <option>Sistem Informasi</option>
+                    </select><br>
+                    Informasi PMB AMIKOM dari<br>
+                    <select class="form-control" name="informasi">
+                      <option>---Pilih Asal Info PMB---</option>
+                      <option>Brosur</option>
+                      <option>Internet</option>
+                      <option>Televisi</option>
+                      <option>Radio</option>
+                      <option>Lainnya</option>
+                    </select><br>
                   </form>
+                </div>
+                <div class="container" style="margin-top: 30px">
+                  <button type="submit" class="btn btn-primary"><i class="fa fa-file"> </i> Daftar</button>
                 </div>
               </div>
             </div>
